@@ -6,7 +6,7 @@ import static com.company.Doctor.DoctorsMenu.showMenu;
 
 public class PatientMenu {
 
-    public static String[] months = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+    public static String[] MONTHS = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
 
     public static void showPatientMenu(){
         int response = 0;
@@ -24,7 +24,7 @@ public class PatientMenu {
                 case 1:
                     System.out.println("::Book an appointment");
                     for (int i = 0; i < 4; i++) {
-                        System.out.println(i+ ". "+ months[i]);
+                        System.out.println(i+ ". "+ MONTHS[i]);
                     }
                     break;
                 case 2:
